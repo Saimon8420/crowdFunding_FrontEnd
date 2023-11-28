@@ -1,0 +1,289 @@
+.backProjectDiv {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.closeDiv {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+}
+
+.closeDiv img {
+    background-color: rgb(182, 180, 180);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.closeDiv img:hover {
+    background-color: rgb(62, 61, 61);
+}
+
+.backProjectDiv h2 {
+    margin: 0px;
+}
+
+.aboutProject p {
+    text-align: justify;
+}
+
+.BackCategory {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.BackCategory hr {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(253, 234, 206);
+    ;
+    border: none;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.BackCategory h3 {
+    margin: 0px;
+}
+
+.eachBack {
+    display: flex;
+    border: 2px solid rgb(253, 234, 206);
+    border-radius: 8px;
+    padding: 20px 15px;
+    gap: 10px;
+}
+
+.active {
+    border: 2px solid var(--DarkCyan);
+}
+
+.BackEachCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 0px 5px;
+}
+
+.noRewards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.noRewards h3:hover {
+    cursor: pointer;
+    color: var(--DarkCyan);
+}
+
+.noRewardsBtn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.BackTitle-Rewards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleRewards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.titleWithSelect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(253, 234, 206);
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: var(--DarkCyan);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.titleRewards h3:hover {
+    cursor: pointer;
+    color: var(--DarkCyan);
+}
+
+.BackPledge {
+    color: var(--DarkCyan);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.BackLeftCountDiv {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.BackLeftCountDiv h3 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.BackLeftCountDiv p {
+    font-size: smaller;
+    font-weight: 500;
+    opacity: 0.6;
+    color: black;
+}
+
+.pledgeInput {
+    display: flex;
+    gap: 5px;
+}
+
+.pledgeInput div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pledgeInput div input {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    outline: 2px solid black;
+    margin-left: calc(20%);
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.dollarSign {
+    position: absolute;
+    top: 9px;
+    left: calc(25%);
+    font-weight: 800;
+}
+
+.CountDivMobile {
+    display: none;
+}
+
+.stockOut {
+    opacity: 0.5;
+}
+
+.stockOut button {
+    background-color: var(---DarkGray);
+    cursor: default;
+}
+
+@media only screen and (max-width:576px) {
+    .backProjectDiv {
+        max-height: 400px;
+    }
+
+    .BackCategory {
+        padding: 0px;
+    }
+
+    .eachBack {
+        padding: 10px 5px;
+    }
+
+    .titleRewards {
+        display: grid;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .titleRewards h3 {
+        margin: 0px;
+    }
+
+    .BackPledge {
+        padding: 0px;
+        margin: 5px 0px 5px 35px;
+    }
+
+    .BackTitleMobile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        gap: 10px;
+        padding: 0px;
+    }
+
+    .pledgeInput {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .pledgeInput div input {
+        width: 100%;
+        margin: 0px;
+        padding: 10px 22px;
+    }
+
+    .pledgeInput button {
+        width: 100%;
+    }
+
+    .dollarSign {
+        top: 9px;
+        left: 12px;
+    }
+
+    .CountDivMobile {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .CountDivMobile h3 {
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    .CountDivMobile p {
+        font-size: smaller;
+        font-weight: 500;
+        opacity: 0.6;
+        color: black;
+    }
+
+    .BackLeftCountDiv {
+        display: none;
+    }
+}

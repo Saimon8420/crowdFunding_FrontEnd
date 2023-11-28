@@ -1,0 +1,12 @@
+.dynamic-bar {
+    width: 100%;
+    height: 12px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(196, 190, 190);
+}
+
+.dynamic-bar p {
+    border-radius: 20px;
+}

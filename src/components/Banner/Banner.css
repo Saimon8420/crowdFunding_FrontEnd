@@ -1,0 +1,166 @@
+.bannerDiv {
+    background: url("../../assets/images/image-hero-desktop.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 200px;
+}
+
+.logo img {
+    width: 120px;
+    height: 15px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+.mobile-nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    margin: auto;
+    padding: 20px 0px;
+    border-radius: 8px;
+    animation: blowUp 1.0s ease;
+}
+
+@keyframes blowUp {
+    0% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.mobile-nav a {
+    display: block;
+    color: black;
+    padding: 0px 10px;
+}
+
+.mobile-nav p {
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    margin: auto 20%;
+    position: absolute;
+    bottom: calc(-50% + 50px);
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    gap: 20px;
+}
+
+.titleLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10%;
+    margin: auto calc(50% - 50px);
+}
+
+.titleBtnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookmarkBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(243, 242, 239);
+    color: var(--DarkCyan);
+    border-radius: 20px;
+}
+
+.bookmark img {
+    width: 30%;
+}
+
+.bookmark p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.marked {
+    color: rgb(120, 111, 97);
+}
+
+
+@media only screen and (max-width:576px) {
+    .bannerDiv {
+        background: url("../../assets/images/image-hero-mobile.jpg");
+    }
+
+    .nav {
+        padding: 40px;
+    }
+
+    .title {
+        margin: auto 10%;
+        padding: 15px;
+        bottom: calc(-50% + 30px);
+    }
+
+    .bookmark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .bookmark img {
+        width: 70%;
+    }
+
+    .bookmark p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:978px) {
+    .nav {
+        padding: 60px;
+    }
+}

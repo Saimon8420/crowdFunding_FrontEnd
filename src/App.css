@@ -1,0 +1,10 @@
+.App {
+    position: relative;
+}
+
+.modalActive {
+    opacity: 0.3;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -999;
+}

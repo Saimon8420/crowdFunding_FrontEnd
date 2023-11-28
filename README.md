@@ -32,12 +32,11 @@ Users should be able to:
 
 ### Screenshot
 - Here is the site view.
-![](/src/assets/websiteView/CrowdFunding_SS.png)
-
+![](public/websiteView/CrowdFunding_SS.png)
 
 ### Links
 
-- Solution URL: [Github-Link](https://your-solution-url.com)
+- Solution URL: [Github-Link](https://github.com/Saimon8420/crowdFunding_FrontEnd)
 - Live Site URL: [Crowd-Funding](https://guileless-kashata-7af0c1.netlify.app/)
 
 ## My process

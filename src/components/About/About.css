@@ -1,0 +1,75 @@
+.aboutDiv {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px 20% 20px 20%;
+    padding: 25px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.aboutProject p {
+    text-align: justify;
+}
+
+.category {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.eachCategory {
+    border-radius: 8px;
+    border: 2px solid rgb(253, 234, 206);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-Rewards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pledge {
+    color: var(--DarkCyan);
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.leftCountDiv {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.leftCountDiv h3 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.leftCountDiv p {
+    font-size: smaller;
+    font-weight: 500;
+    opacity: 0.6;
+    color: black;
+}
+
+.stockOut {
+    opacity: 0.5;
+}
+
+.stockOut button {
+    background-color: var(---DarkGray);
+    cursor: default;
+}
+
+@media only screen and (max-width:576px) {
+    .aboutDiv {
+        margin: 0px 10% 20px 10%;
+    }
+}

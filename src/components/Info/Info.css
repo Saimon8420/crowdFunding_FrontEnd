@@ -1,0 +1,46 @@
+.infoDiv {
+    margin: 180px 20% 5% 20%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.countDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.each h2 {
+    margin: 10px 0px;
+}
+
+.each p {
+    color: var(---DarkGray);
+    margin: 5px 0px;
+    font-weight: 500;
+}
+
+.border-right {
+    border-right: 2px solid rgb(44, 43, 43, 0.1);
+    border-bottom: 0px;
+}
+
+@media only screen and (max-width:576px) {
+    .infoDiv {
+        margin: 180px 10% 5% 10%;
+        text-align: center;
+    }
+
+    .countDiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .border-bottom {
+        border-right: 0px;
+        border-bottom: 2px solid rgb(44, 43, 43, 0.1);
+    }
+}
